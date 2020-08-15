@@ -15,12 +15,18 @@ suggest link :
 # Commands
 
 Msg::error('مشکلی در پردازش دیتا رخ داده است');
+
 Msg::succeess('با موفقیت ارسال شد');
+
 Msg::info('با شما تماس گرفته خواهد شد');
+
 Msg::warning('انجام این کار ممکن است باعث حذف دیتا شود');
 
+
 Msg::updatedSuccessFully(); // با موفقیت ایجاد شد
+
 Msg::deletedSuccessFully(); // با موفقیت حذف شد
+
 Msg::updatedSuccessFully(); //با موفقیت بروزرسانی شد
 
 
