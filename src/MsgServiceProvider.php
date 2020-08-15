@@ -1,6 +1,7 @@
 <?php
 namespace EvilCoders\FlashMessage;
 
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 
@@ -10,6 +11,10 @@ class MsgServiceProvider extends ServiceProvider
       $this->app->bind('Msg', function(){
           return new Msg;
       });
+
+      $this->app->register(\EvilCoders\FlashMessage\MsgServiceProvider::class);
+      $loader = AliasLoader::getInstance();
+      $loader->alias('Msg',\EvilCoders\FlashMessage\MsgFacade::class);
   }
 
 
@@ -20,5 +25,6 @@ class MsgServiceProvider extends ServiceProvider
       $this->publishes([
         __DIR__.'\Views' => base_path('resources/views/msg'),
       ]);
+
   }
 }
