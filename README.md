@@ -2,13 +2,22 @@
 This package show messages such as validationError and custom messages
 
 # Usage
-1-  add jquery
+
+1- run 'composer require evilcoders/flashmessage'
+
+2- add provider in config/app.php
+        EvilCoders\FlashMessage\MsgServiceProvider::class,
+
+3-add aliases in config/app.php
+        "Msg" => EvilCoders\FlashMessage\MsgFacade::class,
+
+4- run 'php artisan vendor:publish'
+
+5- add jquery
 suggest link : 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
 
-2- run 'php artisan vendor:publish'
-
-3- include 'msg.messages' in bottom of layout.
+6- include 'msg.messages' in bottom of layout.
   '@include('msg.messages')'
 
 
