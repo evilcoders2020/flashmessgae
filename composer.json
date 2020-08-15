@@ -1,0 +1,17 @@
+{
+    "name": "evilcoders/flashmessage",
+    "description": "This package apear message in view",
+    "authors": [
+        {
+            "name": "evilcoders",
+            "email": "evilcoders2020@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EvilCoders\\FlashMessage\\" : "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
